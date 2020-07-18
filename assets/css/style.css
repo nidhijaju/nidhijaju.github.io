@@ -132,6 +132,44 @@ a:hover {
   margin-top: 4rem;
 }
 
+/** 
+ * ===================================================================
+ * 08. common styles (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+ .grey-section {
+	background: #ebebeb;
+}
+.grey-section p.lead {
+	color: #7d7d7d;
+}
+.section-intro {
+  max-width: 450px;
+  /* margin: auto; */
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 3.6rem;
+	/* position: relative; */
+}
+.section-intro h1 {
+  margin: auto;
+	/* font-family: "poppins-semibold", serif; */
+	/* font-size: 3.6rem; */
+	color: #313131;
+	line-height: 1.25;
+	margin-bottom: 1.2rem;
+}
+.section-intro h5 {
+  margin: auto;
+	color: #0078ff;
+	/* font-size: 1.6rem; */
+	line-height: 1.875;
+	margin-bottom: 0.3rem;
+	letter-spacing: .4rem;
+}
+
 /*--/ Title s /--*/
 .title-s {
   font-weight: 600;
@@ -227,8 +265,53 @@ a:hover {
   transition: all 500ms ease;
 }
 
+/*------/ Header Socials /------*/
+.header-socials {
+  padding: 1.5rem 0;
+}
+
+.header-socials ul li {
+  display: inline-block;
+}
+
+.header-socials .ico-circle {
+  color: rgb(165, 165, 165);
+  height: 30px;
+  width: 30px;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  line-height: 1.4;
+  margin: 0 15px 0 0;
+  box-shadow: 0 0 0 3px rgb(165, 165, 165);
+  transition: all 500ms ease;
+}
+
+.header-socials .ico-circle:hover {
+  background-color: rgb(165, 165, 165);
+  color: #000;
+  box-shadow: 0 0 0 3px #cde1f8;
+  transition: all 500ms ease;
+}
+
 /*------/ Ul resect /------*/
-.ul-resect, .socials ul, .list-ico, .blog-wrapper .post-meta ul, .box-comments .list-comments, .widget-sidebar .list-sidebar, .widget-tags ul {
+.header-socials ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.list-ico {
+  line-height: 2;
+}
+
+.list-ico span {
+  color: #fff;
+  margin-right: 10px;
+}
+
+
+/*------/ Ul resect /------*/
+.ul-resect, .socials ul, .header-socials ul, .list-ico, .blog-wrapper .post-meta ul, .box-comments .list-comments, .widget-sidebar .list-sidebar, .widget-tags ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
@@ -662,6 +745,11 @@ a:hover {
   font-size: 3rem;
 }
 
+.intro .sub_div { 
+  position: absolute; 
+  bottom: 0px; 
+} 
+
 @media (min-width: 768px) {
   .intro .intro-title {
     font-size: 4.5rem;
@@ -766,18 +854,21 @@ a:hover {
  * ------------------------------------------------------------------- 
  */
  #resume {
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  /* background-color: #ebebeb; */
 }
 
 #resume .resume-header {
 	text-align: center;
 }
 #resume .resume-header h2 {
-	color: #FF0077;
+  color: #0078ff;
+  
 }
 
 #resume .resume-timeline {
+  margin: auto;
 	max-width: 980px;
 }
 #resume .timeline-wrap {
@@ -800,15 +891,15 @@ a:hover {
 	padding-top: 1.5rem;
 }
 #resume .timeline-ico {
-	height: 4.8rem;
-	width: 4.8rem;
-	line-height: 4.8rem;
+	height: 3rem;
+	width: 3rem;
+	line-height: 3rem;
 	background: #313131;
 	border-radius: 50%;
 	text-align: center;
 	color: #FFFFFF;
 	position: absolute;
-	left: 35%;
+	left: 36.5%;
 	top: .9rem;
 	margin-left: -2.4rem;
 }
@@ -829,12 +920,13 @@ a:hover {
 }
 #resume .timeline-header p {
 	font-family: "poppins-regular", sans-serif;
-	font-size: 1.6rem;
+	/* font-size: 1.6rem; */
 	color: #888888;
 }
 #resume .timeline-content {
 	margin-left: 35%;
-	padding-left: 60px;
+  padding-left: 60px;
+  
 }
 #resume .timeline-content h4 {
 	position: relative;
@@ -864,7 +956,7 @@ a:hover {
 		font-size: 1.8rem;
 	}
 	#resume .timeline-header p {
-		font-size: 1.4rem;
+		/* font-size: 1.4rem; */
 	}
 	#resume .timeline-content {
 		padding-left: 50px;
@@ -887,7 +979,7 @@ a:hover {
 		font-size: 2rem;
 	}
 	#resume .timeline-header p {
-		font-size: 1.5rem;
+		/* font-size: 1.5rem; */
 		margin-bottom: 1.5rem;
 	}
 	#resume .timeline-content {
@@ -897,7 +989,7 @@ a:hover {
 		padding-bottom: 0;
 		padding-top: 2.1rem;
 		margin-bottom: .6rem;
-		font-size: 1.7rem;
+		/* font-size: 1.7rem; */
 	}
 	#resume .timeline-content h4::after {
 		bottom: auto;
@@ -909,7 +1001,7 @@ a:hover {
 }
 @media only screen and (max-width:480px) {
 	#resume .resume-header h2 {
-		font-size: 2.2rem;
+		/* font-size: 2.2rem; */
 	}
 	#resume .timeline-wrap::before {
 		left: 1.8rem;
@@ -933,7 +1025,7 @@ a:hover {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-/* .service-box {
+.service-box {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
@@ -966,7 +1058,7 @@ a:hover {
 
 .service-box .s-description {
   color: #4e4e4e;
-} */
+}
 
 /*--------------------------------------------------------------
 # Counter
