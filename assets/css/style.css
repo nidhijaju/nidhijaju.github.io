@@ -241,7 +241,7 @@ a:hover {
 /*------/ Socials /------*/
 .socials {
   padding: 1.5rem 0;
-  align-content: left;
+  margin: auto;
 }
 
 .socials ul li {
@@ -1033,7 +1033,7 @@ a:hover {
   #resume .timeline-block {
     position: relative;
     padding-top: 1.5rem;
-    margin-right: 1.5rem;
+    margin-right: 2rem;
   }
 	#resume .timeline-header, #resume .timeline-content {
 		padding-left: 5.5rem;
@@ -1109,6 +1109,10 @@ a:hover {
 .counter-num .counter {
   font-size: 2rem;
   margin-bottom: 0;
+}
+
+.counter-subtext {
+  font-size: small;
 }
 
 /*--------------------------------------------------------------
