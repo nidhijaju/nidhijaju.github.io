@@ -76,7 +76,7 @@
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
           <h1 class="intro-title mb-4">I am Nidhi Jaju</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">Software Engineer, Electronics Engineer, Graphic Designer</span><strong class="text-slider"></strong></p>
+          <p class="intro-subtitle"><span class="text-slider-items">University Student, Software Engineer, Electronics Engineer, Graphic Designer</span><strong class="text-slider"></strong></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
           <div class=sub_div>
             <div class="header-socials">
@@ -662,7 +662,43 @@
         <div class="row">
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/chrome-project.jpg" data-gall="portfolioGallery" class="venobox">
+              <a href="#chrome-inline-content" class="venobox" data-gall="portfolioGallery" data-vbtype="inline"></a>
+              <div id="chrome-inline-content" style="display: none;">
+                <img src="assets/img/chrome-popup.png" alt="" style="width: 60%; display: block; margin: auto;">
+                <h3 style="text-align: center; margin-left: 20px; margin-right: 20px;">Chromium Project Contributions</h3>
+                <h6 style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  Languages Used: C++, HTML, CSS, Javascript, Perl Data Language
+                </h5>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  As a part of my software engineering internship at Google, I have had the chance to contribute to the open-source 
+                  Chromium project. Initially, my initial project was to mitigate Chrome crashes happening in DevTools and 
+                  chrome://serviceworker-internals when a user has too many service worker registrations.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  Initially to get used to contribute to Chromium, I helped my manager on his ongoing project to move the service 
+                  worker storage to use a mojo interface. I have also been working on improving the code health of the service 
+                  worker codebase, such as using preferred data types, changing to less thread hopping, and removing unnecessary 
+                  data structures among other things.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  My main project became much bigger and higher priority when more bug reports starting coming in, which showed 
+                  that the crashes were not only happening in DevTools and the internal page, but also on browser startup which 
+                  was alarming. We found the root function causing the issue, which was retrieving all registrations. I have been 
+                  working on changing all the relevant call sites and use cases of this function, by writing design docs and making 
+                  changes to how these registrations are read based on how the information is used. Most of these changes will be 
+                  included in Chrome M85/M86.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  Working on such a big open-source project like Chrome has also been an invaluable experience in itself because 
+                  of the fast-paced nature of how things change. I have also been privileged that I have gotten to work on a 
+                  project that became high priority, as well as, getting the opportunity to have my work reviewed by some very 
+                  important people in the company.
+                </p>
+                <!-- <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  <b>See more at: <a href="https://chromium-review.googlesource.com/q/owner:+nidhijaju">Chromium CLs</a></b>
+                </p> -->
+              </div>
+              <!-- <a href="assets/img/chrome-popup.png" data-gall="portfolioGallery" class="venobox"> -->
                 <div class="work-img">
                   <img src="assets/img/chrome-project.jpg" alt="" class="img-fluid">
                 </div>
@@ -830,7 +866,34 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/2048-project.png" data-gall="portfolioGallery" class="venobox">
+              <a href="#2048-inline-content" class="venobox" data-gall="portfolioGallery" data-vbtype="inline"></a>
+              <div id="2048-inline-content" style="display: none;">
+                <img src="assets/img/2048-project.png" alt="" style="width: 60%; display: block; margin: auto; padding-top: 20px;">
+                <h3 style="text-align: center; margin-left: 20px; margin-right: 20px; padding-top: 20px;">2048</h3>
+                <h6 style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  Technologies Used: C++, Command line
+                </h5>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  Designing this 2048 game was an individual first year coursework project for our Software Engineering I module, 
+                  based on the popular game of the same name at the time. It was designed for us to apply our knowledge based on 
+                  our weekly lab sessions, especially related to data structures such as vectors, arrays, and lists. The code is 
+                  purely written in C++ and you can play the game from the command line using the keys w, a, s, and d for up, 
+                  left, down, and right respectively. We were provided a full declarative spec for functions and their signatures, 
+                  and we had to follow the specification to implement relevant methods because our code would be tested with an 
+                  automated testbench. The game is designed in a way that the user can load a pre-configured grid as a .txt file 
+                  or a default 4x4 grid with all zeros and a single 2 in the bottom right corner would be used.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  As this was one of my first big software projects, I learned to break them into smaller, more manageable tasks 
+                  such as the functions. We also had to make the game as robust as possible by thinking about edge cases the game 
+                  could have. I also had the opportunity to think more about the logic and use paper and pen to draw out what was 
+                  happening especially since this was one of the more complex projects I had done at the time. Furthermore, I was 
+                  also able to learn key debugging skills as well as improve my understanding of the data structures.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  <b>Project source code on Github: <a href="https://github.com/nidhijaju/2048-game">2048-game</a></b>
+                </p>
+              </div>
                 <div class="work-img">
                   <img src="assets/img/2048-project.png" alt="" class="img-fluid">
                 </div>
@@ -854,7 +917,37 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/nasa-project.png" data-gall="portfolioGallery" class="venobox">
+              <a href="#nasa-inline-content" class="venobox" data-gall="portfolioGallery" data-vbtype="inline"></a>
+              <div id="nasa-inline-content" style="display: none;">
+                <img src="assets/img/nasa-popup.png" alt="" style="width: 60%; display: block; margin: auto; padding-top: 20px;">
+                <h3 style="text-align: center; margin-left: 20px; margin-right: 20px; padding-top: 20px;">NaSoPod</h3>
+                <h6 style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  Technologies Used: Phase Change Materials, Prototyping, Vernier Temperature Sensors
+                </h5>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  The NaSoPod is a renewable energy heater made up of five aluminium capsules utilising a mixture of phase change materials, 
+                  making it an unconventional heater. You can bring it out during the day so that it can absorb thermal energy from the Sun, 
+                  and bring it back inside at night to heat up a given room as it releases thermal energy. This function allows the NaSoPod 
+                  to heat up a room to 18ºC without electricity. A room temperature of 18ºC is deemed suitable for healthy people by the World 
+                  Health Organization.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  The NaSoPod does not use electricity or fuel, and is completely reusable. This will help to reduce the use of fossil fuels, 
+                  which is necessary in improving the environment because the use of fossil fuels produces an enormous amount of greenhouse gases: 
+                  according to the World Resources Institute, humans have added 2.3 trillion tons of carbon dioxide in the last 200 years, and 
+                  half of it was added in the last 30 years. We need to start changing to other sources of energy immediately, and the NaSoPod 
+                  can serve as a step forward in the right direction.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  We designed this product as a part of the Conrad Spirit of Innovation Challenge and were invited the NASA Kennedy Space Center as 
+                  Top 5 Finalists in the Energy and Environment category. Furthermore, we wont the overall Power Pitch award based on our pitch to 
+                  investors at the final competition. As a result, we were able to file a patent application and a company even reached out to us to 
+                  help commercialise the NaSoPod.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  <b>See our pitch here: <a href="https://www.youtube.com/watch?v=ZWC8ZxvKJPA">Conrad Final Pitch</a></b>
+                </p>
+              </div>
                 <div class="work-img">
                   <img src="assets/img/nasa-project.png" alt="" class="img-fluid">
                 </div>
@@ -880,6 +973,34 @@
         </div>
       </div>
     </section><!-- End Portfolio Section -->
+
+    <!-- <div class="bg-modal">
+      <div class="modal-content">
+        <div class="close">+</div>
+        <img src="assets/img/nasa-popup.png" alt="">
+        <p>
+          The NaSoPod is a renewable energy heater made up of five aluminium capsules utilising a mixture of phase change materials, 
+          making it an unconventional heater. You can bring it out during the day so that it can absorb thermal energy from the Sun, 
+          and bring it back inside at night to heat up a given room as it releases thermal energy. This function allows the NaSoPod 
+          to heat up a room to 18ºC without electricity. A room temperature of 18ºC is deemed suitable for healthy people by the World 
+          Health Organization.
+        </p>
+        <p>
+          The NaSoPod does not use electricity or fuel, and is completely reusable. This will help to reduce the use of fossil fuels, 
+          which is necessary in improving the environment because the use of fossil fuels produces an enormous amount of greenhouse gases: 
+          according to the World Resources Institute, humans have added 2.3 trillion tons of carbon dioxide in the last 200 years, and 
+          half of it was added in the last 30 years. We need to start changing to other sources of energy immediately, and the NaSoPod 
+          can serve as a step forward in the right direction.
+        </p>
+        <p></p>
+          We designed this product as a part of the Conrad Spirit of Innovation Challenge and were invited the NASA Kennedy Space Center as 
+          Top 5 Finalists in the Energy and Environment category. Furthermore, we wont the overall Power Pitch award based on our pitch to 
+          investors at the final competition. As a result, we were able to file a patent application and a company even reached out to us to 
+          help commercialise the NaSoPod.
+        </p>
+      </div>
+
+    </div> -->
 
     <!-- ======= Testimonials Section =======
     <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
