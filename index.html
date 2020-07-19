@@ -834,9 +834,48 @@
               </a>
             </div>
           </div>
+
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/compiler-project.png" data-gall="portfolioGallery" class="venobox">
+              <div id="compiler-inline-content" style="display: none;">
+                <img src="assets/img/compiler-project.png" alt="" style="width: 60%; display: block; margin: auto; padding-top: 20px;">
+                <h3 style="text-align: center; margin-left: 20px; margin-right: 20px; padding-top: 20px;">C90 Compiler</h3>
+                <h5 style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  Technologies Used: C++, Flex, Bison, Bash, Command line
+                </h5>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  This was a second year pair project as a part of the Language Processing module, and was essentially an 
+                  extension to the MIPS Simulator project. The focus of the project was to design a compiler that could 
+                  translate given C code into the equivalent MIPS assembly. We also had to provide an automated test suite 
+                  which would automate the compiler testing process. Furthermore, we had to design the lexer, parser, and 
+                  code generator.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  I learned to use Flex to create the lexer which generates tokens for every matching regular expressions 
+                  found. We used Bison to write the grammar for the functions in the parser and build our Abstract Syntax 
+                  Tree (AST). The last part, the code generator, was the biggest challenge; transforming the AST into 
+                  equivalent machine code required manipulation of data and in-depth understanding of stack operations.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  Our main design decision was to treat the MIPS CPU as a stack machine rather than as a register based CPU, 
+                  to avoid any issues with managing the contents of the registers. We decided to do this as the compiler would 
+                  not be marked on performance, but rather only for accuracy. The main challenge we faced was trying to get 
+                  the memory allocation on the stack to work correctly. However, in the end we were able to successfully 
+                  implement a C90 compiler according to the project specification.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  As an additional deliverable, we also had to create a C-to-Python translator, which only supported a limited 
+                  number of C features, so that we could better understand how to lex C code to a much simpler Python. 
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  Building this compiler was definitely a huge milestone in my software engineering career, and it was 
+                  definitely very rewarding as I learned a lot.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  <b>Project source code on Github: <a href="https://github.com/nidhijaju/C90-to-MIPS-Compiler">C90-to-MIPS-Compiler</a></b>
+                </p>
+              </div>
+              <a href="#compiler-inline-content" class="venobox" data-gall="portfolioGallery" data-vbtype="inline">
                 <div class="work-img">
                   <img src="assets/img/compiler-project.png" alt="" class="img-fluid">
                 </div>
@@ -860,7 +899,38 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/mips-project.png" data-gall="portfolioGallery" class="venobox">
+              <div id="mips-inline-content" style="display: none;">
+                <img src="assets/img/mips-project.png" alt="" style="width: 60%; display: block; margin: auto; padding-top: 20px;">
+                <h3 style="text-align: center; margin-left: 20px; margin-right: 20px; padding-top: 20px;">MIPS CPU Simulator</h3>
+                <h5 style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  Technologies Used: C++, Bash, Command line
+                </h5>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  This was a second year pair project as a part of the Computer Architecture module. It was designed to use our 
+                  knowledge from our lessons to build a CPU simulator that executes binary files based on the MIPS assembly 
+                  language rules according to the Instruction Set Architecture. We also had to provide a testbench for the 
+                  simulator to run unit tests on each command supported by our or any other simulator, which endedup consisting 
+                  of over 250 tests.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  One of the challenges that we faced was trying to understand the MIPS ISA, especially the LWL and LWR 
+                  instructions which would read read a character from stdin. However, in the end we were able to successfully 
+                  implement all 52 instructions (R, I, and J types) as per given specification for the project and were able to pass all of the 
+                  assessed tests. We also had to simulate the load delay slot which is caused by the MIPS pipelining, which was 
+                  done by adding a second program pointer that would decrypt the next instruction whilst the other was running.
+
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  Overall, this project was very challenging and time-consuming, but was very rewarding and enjoyable as well. 
+                  Working on building this simulator was one of the biggest software projects I had completed until then, and the 
+                  fact that we had to write a testbench really helped us to set milestones as we progressing through the projects, 
+                  which is an important skill for all of my future projects.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  <b>Project source code on Github: <a href="https://github.com/nidhijaju/MIPS-Simulator">MIPS-Simulator</a></b>
+                </p>
+              </div>
+              <a href="#mips-inline-content" class="venobox" data-gall="portfolioGallery" data-vbtype="inline">
                 <div class="work-img">
                   <img src="assets/img/mips-project.png" alt="" class="img-fluid">
                 </div>
@@ -884,14 +954,65 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/fpga-project.png" data-gall="portfolioGallery" class="venobox">
+              <div id="fpga-inline-content" style="display: none;">
+                <img src="assets/img/fpga-project.png" alt="" style="width: 60%; display: block; margin: auto; padding-top: 20px;">
+                <h3 style="text-align: center; margin-left: 20px; margin-right: 20px; padding-top: 20px;">SwypeKey (Virtual In-Air Keyboard)</h3>
+                <h5 style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  Technologies Used: FPGA, C, Vivado, Quartus
+                </h5>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  This was a first year group project as a part of the Engineering & Design module, which was designed to introduce us to 
+                  Field Programmable Gate Arrays (FPGAs). Along with learning how the device operates and runs, we had to apply our 
+                  learning within a short time frame to show how we understood the key concepts of image overlay, and real-time 
+                  image processing such as edge and color detection. We were given full autonomy to research, execute, and deliver 
+                  the project in our groups. As a group, we decided to implement a real-time virtual keyboard that a user can type on in 
+                  the air with their finger.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  The four main components of our system were color detection, keyboard implementation, processing the intention of users, 
+                  the the typing output. After careful considerations of how we could implement each component and using decision matrices 
+                  to help us, we came to the following decisions. We decided to use HSL values for color detection as that would be used 
+                  for an increased accuracy and better representation of the color spectrum, which would ultimately lead to better 
+                  tracking of the finger. The target hur and minimum saturation values, which were inputted through the ARM processor via 
+                  Jupyter, pass through the FPGA to process the colors to obtain the x and y coordinates of the finger’s position on the 
+                  screen. For the keyboard overlay, we implemented a transparent overlay on the FPGA. By implementing it on the hardware 
+                  directly, although it used some resources, it allowed for a great frame rate. To register the intention of users, we 
+                  wanted to initially implement detecting a user-drawn circle around the desired key, but due to time constraints we had 
+                  to resort to using the button on the provided FPGA. Lastly, we decided to implement the typing itself on the ARM CPU as it 
+                  would not use resources on the FPGA and thus slow it down, and it was much easier to implement as well given the time constraints.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  Through this project, we were able to succesfully create a virtual in-air keyboard. the user can use a brightly-colored 
+                  sticker on their finger to help track its movement as it pushes keys on the virtual keyboard. The FPGA then processes 
+                  this data and with the help of the ARM CPU, outputs the letter that was typed. Although we were not able to implement 
+                  everything we had planned to initially, such as drawing a circle to indicate the user’s intention to type on a key, 
+                  the basic concept was still accomplished with high standards.
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  There was a steep learning curve about the nature of the FPGA, how powerful it actually was, and how the different 
+                  directive on Vivado HLS affect the system. For example, we learned that although pipelining loops may use a lot more 
+                  resources on the FPGA, and therefore it should theoretically make the system less efficient, testing it on Jupyter shows 
+                  us that this in fact leads to higher frame rate, which is ultimately better for the user. This is because more processes 
+                  can happen in parallel if a loop is unrolled and pipelined. We learned that there are different data types that can be 
+                  sent to the FPGA, and were cautious about using the most efficient types from the very beginning, to yield better hardware 
+                  optimisation. Not only that, certain errors will not display until we tested and implemented it on Jupyter, this created 
+                  backlogs to discover which areas had failed for example, inputting two 32 bits using one bus line. 
+                </p>
+                <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
+                  In general, despite these difficulties, a working final product was created that achieved all the basic design 
+                  specifications outlined in the beginning. The final product has a video output with a keyboard overlay on top. 
+                  Furthermore, a highlight of the letter which the finger is above is shown in the output along with any letters 
+                  previously outputted by the user.
+                </p>
+              </div>
+              <a href="#fpga-inline-content" class="venobox" data-gall="portfolioGallery" data-vbtype="inline">
                 <div class="work-img">
                   <img src="assets/img/fpga-project.png" alt="" class="img-fluid">
                 </div>
                 <div class="work-content">
                   <div class="row">
                     <div class="col-sm-8">
-                      <h2 class="w-title">SwypeKey (Virtual In-Air Keyboard)</h2>
+                      <h2 class="w-title">SwypeKey (Virtual In-Air Keyboard</h2>
                       <div class="w-more">
                         <span class="w-ctegory">FPGA Design</span> / <span class="w-date">May 2018</span>
                       </div>
@@ -1319,7 +1440,7 @@
                     </div>
                     <!-- <div class="more-info"> -->
                       <p class="lead">
-                        Please feel free to reach out to me if you would like to connect about future oppotunities.
+                        Please feel free to reach out to me if you would like to connect about future opportunities.
                         I am always up to have any exciting conversations as well!
                       <ul class="list-ico">
                         <!-- <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
